@@ -21,7 +21,8 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Column="0">
-            <TreeView Margin="10,10,10,10" Name="TreeView1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinHeight="200" >  
+        <Button Name="btnAddConnection" Height="30" Width="150" VerticalAlignment="Top" HorizontalAlignment="Left" Click="AddConnection">Add Connection</Button>
+            <TreeView Margin="10,40,10,10" Name="TreeView1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinHeight="200" >  
     <TreeViewItem Header="Cold Drinks">  
         <TreeViewItem Header="Coke"></TreeViewItem>  
         <TreeViewItem Header="Pepsi"></TreeViewItem>  

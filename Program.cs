@@ -6,6 +6,7 @@ namespace DbManagementStudio
 {
     class Program
     {
+        public static MainWindow frmMain;
         // Initialization code. Don't use any Avalonia, third-party APIs or any
         // SynchronizationContext-reliant code before AppMain is called: things aren't initialized
         // yet and stuff might break.
@@ -21,7 +22,8 @@ namespace DbManagementStudio
         // container, etc.
         private static void AppMain(Application app, string[] args)
         {
-            app.Run(new MainWindow());
+            frmMain=new MainWindow();
+            app.Run(frmMain);
         }
     }
 }
