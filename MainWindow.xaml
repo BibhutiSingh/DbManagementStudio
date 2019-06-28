@@ -1,0 +1,44 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DbManagementStudio.MainWindow"
+        Title="DbManagementStudio">
+    
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="30"></RowDefinition>
+         <RowDefinition Height="*"></RowDefinition>
+          <RowDefinition Height="30"></RowDefinition>
+      </Grid.RowDefinitions>
+
+      <Grid Grid.Row="1">
+        <Grid.ColumnDefinitions>  
+            <ColumnDefinition Width="400"></ColumnDefinition>  
+            <ColumnDefinition Width="5"></ColumnDefinition>  
+            <ColumnDefinition Width="*"></ColumnDefinition>  
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <TreeView Margin="10,10,10,10" Name="TreeView1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinHeight="200" >  
+    <TreeViewItem Header="Cold Drinks">  
+        <TreeViewItem Header="Coke"></TreeViewItem>  
+        <TreeViewItem Header="Pepsi"></TreeViewItem>  
+        <TreeViewItem Header="Orange Juice"></TreeViewItem>  
+        <TreeViewItem Header="Milk"></TreeViewItem>  
+        <TreeViewItem Header="Iced Tea"></TreeViewItem>  
+        <TreeViewItem Header="Mango Shake"></TreeViewItem>  
+    </TreeViewItem>  
+</TreeView>
+        </Grid>
+        <GridSplitter HorizontalAlignment="Center"   
+                      VerticalAlignment="Stretch"   
+                      Grid.Column="1"   
+                      Width="5" Background="Silver">  
+        </GridSplitter> 
+      </Grid>
+      
+
+    </Grid>
+</Window>
